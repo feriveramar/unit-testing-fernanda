@@ -13,8 +13,6 @@ export class ReadFileService {
         .subscribe(
           data => {
             this.fileContent = this.processFileContent(data)
-           
-
             console.log('File Content:', this.fileContent);
             resolve(this.fileContent);
           },
